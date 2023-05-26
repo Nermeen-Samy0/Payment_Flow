@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Amazon Test Suite">
+ <parameter name="browserType" value="Chrome"/>
+ <parameter name="url" value="https://www.amazon.eg/"/>
+<test name="Home Page test">
+    <classes>
+        <class name="com.Foodics.Tests.PaymentTest">
+            <methods>
+                <include name="openAllMenuBar"></include>
+                <include name="clickOnSeeAll"></include>
+                <include name="openVideoGames"></include>
+                <include name="openAllVideoGames"></include>
+                <include name="clickOnFreeShipping"></include>
+                <include name="filterWithNewCondition"></include>
+                <include name="openPriceDropdown"></include>
+                <include name="sortByHighToLow"></include>
+                <include name="getListOfProducts"></include>
+                <include name="openCartContainer"></include>
+                <include name="validateTotalPriceAndProductCount"></include>
+                <include name="proceedToRetailCheckout"></include>
+                <include name="enterAddressFullName"></include>
+                <include name="enterAddressPhoneNumber"></include>
+                <include name="enterAddressLine1"></include>
+                <include name="enterBuildingNameOrNumber"></include>
+                <include name="enterAddressCity"></include>
+                <include name="enterAddressDistrictOrCounty"></include>
+                <include name="enterAddressLandmark"></include>
+                <include name="submitTheAddress"></include>
+                <include name="selectCashPaymentMethod"></include>
+                <include name="selectCashPaymentMethod"></include>
+            </methods>
+        </class>
+    </classes>
+</test>
+</suite>
+
+
