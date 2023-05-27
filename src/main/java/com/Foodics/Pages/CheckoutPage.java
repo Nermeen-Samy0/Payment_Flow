@@ -81,11 +81,6 @@ public class CheckoutPage extends MainPage {
         clickOnElement(submitButton);
     }
 
-    public void selectCashPaymentMethod() {
-      System.out.println(paymentMethodGroup.getSize());
-      //System.out.println(driver.findElements(By.xpath("//input[@type='radio']")));
-      //System.out.println(driver.findElements(By.xpath("//input[@type='radio']")).size());
-    }
     private void waitVisibilityOfElement(String optionLocator, int index) {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className(optionLocator)));
         WebElement autoOptions = driver.findElement(By.className(optionLocator));

@@ -27,4 +27,5 @@ public class PropertiesFilesHandler {
     public String getAddressCity() {return properties.getProperty("addressCity");}
     public String getAddressDistrictOrCounty() {return properties.getProperty("addressDistrictOrCounty");}
     public String getAddressLandmark() {return properties.getProperty("addressLandmark");}
+    public String getAmountCondition() {return properties.getProperty("amountCondition");}
 }

@@ -30,7 +30,7 @@ public class PaymentTest extends BaseTest {
        homePage.clickAllVideoGamesButton();
     }
     @Test public void getListOfProducts() {
-        videoGamesPage.selectListOfProducts();
+        videoGamesPage.selectListOfProducts(Integer.parseInt(prop.getAmountCondition()));
     }
     @Test public void clickOnFreeShipping() {
         videoGamesPage.checkFreeShippingCheckbox();
@@ -77,7 +77,5 @@ public class PaymentTest extends BaseTest {
     @Test public void submitTheAddress() {
        checkoutPage.submitTheAddress();
     }
-    @Test public void selectCashPaymentMethod() {
-       checkoutPage.selectCashPaymentMethod();
-    }
+
 }

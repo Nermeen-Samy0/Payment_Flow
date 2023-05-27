@@ -51,11 +51,11 @@ public class VideoGamesPage extends MainPage {
     public void sortByHighToLow() {
         clickOnElement(sortValue.findElement(By.tagName("ul")).findElements(By.tagName("li")).get(2));
     }
-    public void selectListOfProducts() {
+    public void selectListOfProducts(int amountCondition) {
         allSearchResults = driver.findElement(By.id("search")).findElements(By.className("a-price-whole"));
-        for (int i = 0; i < 1; i++) {
+        for (int i = 0; i < allSearchResults.size(); i++) {
             Integer price = getPriceAsNumber(allSearchResults.get(i).getText());
-            if (price < 15000) {
+            if (price < amountCondition) {
                 itemsSelectedCount++;
                 itemsSelectedTotalPrices += price;
                 clickOnElement(allSearchResults.get(i));

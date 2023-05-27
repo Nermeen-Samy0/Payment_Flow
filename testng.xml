@@ -28,7 +28,6 @@
                 <include name="enterAddressLandmark"></include>
                 <include name="submitTheAddress"></include>
                 <include name="selectCashPaymentMethod"></include>
-                <include name="selectCashPaymentMethod"></include>
             </methods>
         </class>
     </classes>
